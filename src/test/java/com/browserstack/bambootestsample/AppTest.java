@@ -53,6 +53,7 @@ public class AppTest
     	capabilities.setCapability("browser", "chrome");
     	WebDriver driver = new RemoteWebDriver(new URL("https://" + username + ":" + accessKey + "@hub.browserstack.com/wd/hub"), capabilities);
     	driver.get("https://www.csgo500.com");
+    	driver.quit();
     	assertTrue( true );
     }
 }
